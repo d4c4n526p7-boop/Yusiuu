@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Yusiuuu — 유수풀처럼 둥둥 떠다니는 마니또 미션 아카이브." />
+  <title>Yusiuuu</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Yusiuuu 홈">유수풀로 풍덩!</a>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a class="active" href="index.html">Home</a>
+      <a href="#about">About</a>
+      <a href="#archive">Archive</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div class="title-wrap">
+          <h1 id="hero-title">
+            <span class="title-fixed">유수풀로</span>
+            <span class="splash-word" tabindex="0">풍덩!</span>
+          </h1>
+          <p>유수의 매력에 빠져보아요.</p>
+        </div>
+        <button class="tube" type="button" aria-label="튜브를 오른쪽으로 흘려보내기">
+          <span class="tube-hole" aria-hidden="true"></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="cards-section" id="archive" aria-labelledby="archive-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">ARCHIVE</p>
+          <h2 id="archive-title">마니또 미션</h2>
+        </div>
+        <p class="section-note">카드를 눌러 이야기를 열어보세요.</p>
+      </div>
+      <div class="cards" id="cards"></div>
+    </section>
+
+    <section class="about" id="about">
+      <p class="eyebrow">ABOUT</p>
+      <h2>From. 유수의 마니또</h2>
+      <p>유수의 인재가 모인 다담에서도 청산유수의 말솜씨를 뽐내는 유수의 매력에 풍덩 빠져 유수풀을 둥둥 떠다니는 중🏊‍♂️🛟</p>
+    </section>
+  </main>
+
+  <footer>© 2026 Yusiuuu</footer>
+  <script src="posts.js"></script>
+  <script src="main.js"></script>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script>if (window.netlifyIdentity) { window.netlifyIdentity.on("init", user => { if (!user && window.location.hash.includes("invite_token")) window.netlifyIdentity.open("signup"); }); }</script>
+</body>
+</html>

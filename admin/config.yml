@@ -1,0 +1,33 @@
+backend:
+  name: github
+  repo: baejy0117/Yusiuuu
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "assets/uploads"
+
+site_url: "https://yusiuuu.netlify.app"
+display_url: "https://yusiuuu.netlify.app"
+logo_url: "../assets/default-card.png"
+
+collections:
+  - name: "posts"
+    label: "마니또 미션"
+    folder: "content/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "제목", name: "title", widget: "string" }
+      - { label: "날짜", name: "date", widget: "datetime", date_format: "YYYY.MM.DD", time_format: false, format: "YYYY-MM-DD" }
+      - { label: "카드에 보일 짧은 설명", name: "excerpt", widget: "text", required: false }
+      - { label: "대표 사진", name: "cover", widget: "image", required: false, hint: "사진이 없으면 기본 이미지가 카드에 표시됩니다." }
+      - label: "추가 사진"
+        name: "images"
+        widget: "list"
+        required: false
+        max: 2
+        hint: "대표 사진까지 합쳐 최대 3장으로 쓰는 것을 추천합니다."
+        field: { label: "사진", name: "image", widget: "image" }
+      - { label: "본문", name: "body", widget: "markdown", required: false }

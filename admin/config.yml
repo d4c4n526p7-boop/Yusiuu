@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: baejy0117/Yusiuuu
+  repo: d4c4n526p7-boop/Yusiuuu
   branch: main
 
 media_folder: "assets/uploads"
